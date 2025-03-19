@@ -14,12 +14,12 @@ export const InfoCard = ({ icon: Icon, label, numberOfItems, variant}: infoCardP
         <div style={{"background":"#fff", "borderColor":"hsl(214.3 60.24% 86.14% / var(--tw-border-opacity, 1))"}} className="border rounded-md flex items-center gap-x-2 p-3">
             <IconBadge icon={Icon} variant={variant} />
             <div className="">
-        <p className="font-medium ">
-            {label}
-        </p>
-        <p className="text-gray-500 text-sm">
-            {numberOfItems} {numberOfItems === 1? "Course" : "Courses"}
-        </p>
+                <p className="font-medium ">
+                    {label}
+                </p>
+                <p className="text-gray-500 text-sm">
+                    {numberOfItems} {numberOfItems === 1? "Course" : "Courses"}
+                </p>
             </div>
         </div>
     )
