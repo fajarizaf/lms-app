@@ -3,9 +3,9 @@ import SidebarRoutes from "./sidebar-routes";
 
 export const Sidebar = () => {
     return ( 
-        <div className="h-full shadow-sm border-r flex flex-col overflow-y-auto bg-white ">
+        <div style={{"background":"#180c3c"}} className="h-full shadow-sm border-r flex flex-col overflow-y-auto bg-white ">
             <div className="p-6">
-                <Logo />
+                <h3  style={{"color":"#fff"}}>LMS Dashboard</h3>
             </div>
             <div className="flex flex-col w-full">
                 <SidebarRoutes />
