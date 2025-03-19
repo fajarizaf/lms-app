@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
     <html lang="en">
-      <body className={inter.className}>
+      <body style={styles.bg1} className={inter.className}>
         <ConfettiProvider />
         <ToasterProvider />
         {children}
@@ -29,4 +29,10 @@ export default function RootLayout({
     </html>
     </ClerkProvider>
   )
+}
+
+var styles = {
+  bg1: {
+    backgroundImage: "linear-gradient(180deg, #b9d4ef, #f4f7fc 25.79%)",
+  }
 }
